@@ -1,7 +1,7 @@
-# Sigma–Delta Modulator – Cadence Virtuoso
+# Delta-Sigma Modulator – Cadence Virtuoso
 
 This repository contains the design and simulation of a **first-order
-Sigma–Delta (ΔΣ) Modulator** implemented using **Cadence Virtuoso**.
+Delta-Sigma (ΔΣ) Modulator** implemented using **Cadence Virtuoso**.
 The modulator is constructed by **integrating previously designed and
 verified blocks**, namely the **Comparator, Integrator, and Quantiser**.
 
@@ -13,13 +13,13 @@ verified blocks**, namely the **Comparator, Integrator, and Quantiser**.
 - comparator
 - integrator
 - quantiser
-- sigma_delta_modulator
+- delta_sigma_modulator
 
 ## Cells Included
-- **slope_1** : Top-level Sigma–Delta modulator schematic
+- **slope_1** : Top-level Delta–Sigma modulator schematic
 
 ## Block-Level Description
-The Sigma–Delta Modulator is implemented using the following blocks:
+The Delta-Sigma Modulator is implemented using the following blocks:
 
 - **Integrator**  
   Accumulates the difference between the input signal and the feedback
@@ -36,7 +36,7 @@ The Sigma–Delta Modulator is implemented using the following blocks:
   to the summing node (delta operation).
 
 ## Architecture
-The modulator follows a **first-order Sigma–Delta architecture**:
+The modulator follows a **first-order Delta-Sigma architecture**:
 - Input summing node (error calculation)
 - Integrator
 - Quantiser
@@ -51,13 +51,15 @@ analog signal.
 - Output: High-frequency 1-bit digital bitstream
 - The density of ones and zeros represents the input signal amplitude
 
-## Screenshots
-The `screenshots/` folder contains:
-- Sigma–Delta modulator schematic
-- Transient simulation showing:
-  - Integrator output
-  - Quantiser output (1-bit stream)
-  - Feedback behavior
+## Delta–Sigma Modulator Schematic
+Schematic of the first-order Delta–Sigma Modulator designed in Cadence Virtuoso.
+
+![Delta Sigma Modulator Schematic](images/delta_sigma_schematic.png)
+
+## Simulation Results
+Transient simulation results showing the 1-bit digital output of the Delta–Sigma Modulator.
+
+![Delta Sigma Modulator Output](images/delta_sigma_output.png)
 
 ## Project Team
 This project was carried out as a **group mini-project**.
